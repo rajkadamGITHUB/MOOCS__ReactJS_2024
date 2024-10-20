@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Task 1: Header with Name and Navigation -->
+    <header>
+        <h1>RAJ KADAM</h1>
+        <nav>
+            <a href="#bio">Bio</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Task 2: Section with Brief Bio and Photo -->
+        <section id="bio" class="bio">
+            <h2>About Me</h2>
+            <img src="C:\Users\Raj\Desktop\1715103670762.jpg" alt="RAJ KADAM">
+            <p>I'm an enthusiastic Master of Computer Applications (MCA) student with a passion for technology and software development. I have a solid foundation in programming languages such as Java, Python, and C, and I’m eager to explore emerging technologies like artificial intelligence,Data Science And machine learning.</p>
+        </section>
+
+        <!-- Task 3: Section with a List of Hobbies -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Photography</li>
+                <li>Traveling</li>
+                <li>Reading Books</li>
+                <li>Coding</li>
+            </ul>
+        </section>
+
+        <!-- Task 4: Form to Send a Message -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <span id="nameError" class="error">Name is required</span>
+
+                <input type="email" id="email" placeholder="Your Email" required>
+                <span id="emailError" class="error">Valid email is required</span>
+
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <span id="messageError" class="error">Message is required</span>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formResponse"></p>
+        </section>
+
+        <script src="script.js"></script>
+
+    </div>
+
+
+</body>
+</html>
